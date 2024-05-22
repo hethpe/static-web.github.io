@@ -1702,3 +1702,36 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
+.hyu{
+    margin-left: 700px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-info {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 800px;
+    margin-top: -300px;
+}
+
+.contact-info h2 {
+    color: #333;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.contact-info strong {
+    color: #333;
+}
