@@ -1,0 +1,74 @@
+Below is an HTML/CSS code to create a layout with 4 white boxes and text on the outside top:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DM Immigration Consultant</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+  }
+  .box {
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  .text {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  .overlay {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="overlay">DM Immigration Consultant</div>
+  <div class="box">
+    <div class="header">
+      <h1>About Us</h1>
+    </div>
+    <div class="text">
+      DM Immigration Consultant is a team of certified and well-recognized immigration consultants in India. We not only provide immigration services but also provide complete travel solutions to our clients globally. Whether you’re looking to avail tourist visa to spend your holidays, or for a business meeting, our professional visit visa consultants are here to help. What makes us stand out from others is – “The Way We Treat Our Customers”. Once we receive an inquiry from our clients, we will contact them immediately and schedule a one-to-one consultation with them to understand their requirements and advise the right solution for them.
+    </div>
+  </div>
+  <!-- Add more boxes if needed -->
+</div>
+
+</body>
+</html>
+```
+
+This code creates a layout with a container having an overlay at the top with the text "DM Immigration Consultant". Inside the container, there's a white box with the text "About Us" and the description below it. You can add more boxes similarly if needed. Adjust the styles as per your requirements.

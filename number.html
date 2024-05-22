@@ -1,0 +1,65 @@
+Sure, here is a simple HTML/CSS example that creates two counters as you described:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counters</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .counter {
+    text-align: center;
+  }
+  
+  .yellow {
+    color: yellow;
+  }
+  
+  .blue {
+    color: blue;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="counter">
+    <h2 class="yellow">Country</h2>
+    <h3 id="countryCounter" class="yellow">0</h3>
+  </div>
+  <div class="counter">
+    <h2 class="blue">Cancelled</h2>
+    <h3 id="cancelledCounter" class="blue">0</h3>
+  </div>
+</div>
+
+<script>
+  // Counter for country
+  let countryCount = 0;
+  const countryCounter = document.getElementById('countryCounter');
+  setInterval(() => {
+    countryCount++;
+    if (countryCount > 80) countryCount = 80; // Cap at 80+
+    countryCounter.textContent = countryCount;
+  }, 1000); // Increase every second
+
+  // Counter for cancelled
+  let cancelledCount = 0;
+  const cancelledCounter = document.getElementById('cancelledCounter');
+  setInterval(() => {
+    cancelledCount++;
+    if (cancelledCount > 1000) cancelledCount = 1000; // Cap at 1000+
+    cancelledCounter.textContent = cancelledCount;
+  }, 00); // Increase every half second
+</script>
+</body>
+</html>
+```
+
+This code will display two counters side by side, each with a title (in yellow and blue respectively) and a number below it. The first counter will increment from 0 to 80+ and the second one from 0 to 1000+. You can adjust the CSS styles and JavaScript intervals as needed.

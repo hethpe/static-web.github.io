@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .table{
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+        table{
+            background-color: rgb(200, 196, 200);
+            border-radius: 2px;
+            margin-left: 220px;
+            margin-top: 100px;
+        }
+        input[type=button]{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #64278f;
+            color: white;
+            width: 100%;
+            height: 70%;
+            outline: none;
+            border-radius: 2px;
+            animation-duration: 1.s;
+            animation:alternate-reverse;
+        }
+        input:active[type=button]{
+            background: #e5e5e5;
+            -webkit-box-shadow:inset 0px 0px 5px #c1c1c1;
+            -moz-box-shadow:inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;;
+        }
+        .display-box{
+            background-color: #e2e1e4;
+            border: solid black 0.5px;
+            color: black;
+            height: 65%;
+            width: 100%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <table id="calc">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result" class="display-box" disabled>
+<br>
+            </td>
+<br>
+            <td><input type="button" value="c" onclick="Clearscreen()" id="btn"></td>
+        </tr>
+<tr>
+        <td><input type="button" value="1"onclick="display('1')"></td>
+        <td><input type="button" value="2"onclick="display('2')"></td>
+        <td><input type="button" value="3"onclick="display('3')"></td>
+         <td><input type="button" value="/"onclick="display('/')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="4"onclick="display('4')"></td>
+    <td><input type="button" value="5"onclick="display('5')"></td>
+    <td><input type="button" value="6"onclick="display('6')"></td>
+    <td><input type="button" value="+"onclick="display('+')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="7"onclick="display('7')"></td>
+    <td><input type="button" value="8"onclick="display('8')"></td>
+    <td><input type="button" value="9"onclick="display('9')"></td>
+     <td><input type="button" value="-"onclick="display('-')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="0"onclick="display('0')"></td>
+    <td><input type="button" value="." onclick="display('.')"></td>
+    <td><input type="button" value="=" onclick="calclulate()" id="btn"></td>
+
+     <td><input type="button" value="*" onclick="display('*')"></td>
+</tr>
+    </table>
+</body>
+<script>
+    function Clearscreen(){
+        document.getElementById("result").value = "";
+    
+    }
+    function display(value){
+        document.getElementById("result").value += value;
+
+    }
+
+    function calclulate(){
+        var p= document.getElementById("result").value;
+        var q=  eval(p) ;
+        document.getElementById("result").value = q ;
+    }
+</script>
+</html> 

@@ -1,0 +1,36 @@
+To create a button that, when clicked, automatically sends an email to a user, you would typically need a combination of HTML for the button and JavaScript to handle the email sending functionality. Below is a basic example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Sender</title>
+<script>
+function sendEmail() {
+    // You would need to replace these values with your own SMTP server details
+    const smtpServer = 'smtp.gmail.com';
+    const smtpUsername = 'het8169@gmail.com';
+    const smtpPassword = 'het@1234#5';
+    const senderEmail = 'hp747005@gmail.com';
+    const recipientEmail = 'het93258@gmail.com';
+    
+    // Constructing the email message
+    const subject = 'date rubn';
+    const body = 'Body of the email';
+
+    // Constructing the mailto link
+    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open mail client with the mailto link
+    window.location.href = mailtoLink;
+}
+</script>
+</head>
+<body>
+
+<button onclick="sendEmail()">Send Email</button>
+
+</body>
+</html>

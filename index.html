@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style2.css">
+
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+
+</script>
+
+  <script>
+     $(document).ready(function(){
+    // Show popup on page load
+    $("#popup").fadeIn('slow');
+
+    // Hide popup when close button is clicked
+    $('.btn-close').click(function(){
+        $("#popup").fadeOut();
+    });
+
+    // Show popup every 4 minutes after the first popup is shown
+    setInterval(function(){
+        $('#popup').fadeIn();
+    }, 200); // 2 minutes in milliseconds
+});
+
+  </script>
+
+  <title>Hello, world!</title>
+</head> 
+
+<body>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <img src="country-1.jpg" alt="Popup Image" height="500px" width="400px" >
+       
+    </div>
+     <div>
+
+      <button style="margin-top: -340px; margin-left: 400px; position: absolute;" type="button" class="btn-close" aria-label="Close"></button>
+    </div>
+</div> 
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <img src="global.png" height="30px" width="100px">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="web.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            services
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="studentvisa.html">student visa</a>
+            <a class="dropdown-item" href="vistr visa.html">visitor visa</a>
+            <a class="dropdown-item" href="workpermit.html">workpermit</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contatc us.html">contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <div class="container-fluied modal-xxl lg">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slider-version-5.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="httt">Want to study abroad ?</h5>
+            <p class="het1">you need a best cousaltant in ahmedabad.</p>
+            <a class="het2" href="contactglobe.html">Enquire now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider-version-6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="het3">IELTS / PTE / TOFEL / ENGLISH SPEAKING</h5>
+
+            <div class="he">
+              <hr class="new1">
+            </div>
+            <p class="het4">High-Stakes English Test for study,work and migration</p>
+            <a class="het5" href="contactglobe.html">Start coaching</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider-version-4.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="het6">Immigration and Visa cousaltant</h5>
+            <div class="he11">
+              <hr class="new2">
+            </div>
+            <p class="het7">Global Oversas is a best visa cousaltant in ahmedabad is a leading,trusted and
+              well-established foreign education and immigration consultancy providing genuine,service</p><br>
+            <a class="het8" href="contactglobe.html">Book a cousaltation</a>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  </div>
+  <br><br><br>
+  <h2 class="het12">
+    Immigration - Choose your country!
+  </h2>
+
+  <p class="het13">
+    we have a almost high economic country and the we are provide study work and migration visa's.<br>
+  <p class="het14"> the lowest cousaltant fees in ahmedabad</p>
+  </p>
+
+  <div class="card" style="width: 18rem;">
+    <img src="country-6.jpg" class="card-img-top" alt=".sss..">
+    <div class="het19">
+
+      <img src="images.png" alt="not load">
+
+      <p class="card-body">
+        United states
+      </p>
+      <p class="card11-body">
+        Studying In The United States The <br>gen erom repetition jected humour <br>or non-characteristic words etc
+      </p>
+      <a href="contactglobe.html" class="het11">Read More
+      </a>
+      <hr class="new4">
+    </div>
+  </div>
+
+
+
+
+  <div class="card-1" style="width: 18rem;">
+    <img src="country-1.jpg" class="card-img-top" alt=".sss..">
+    <div class="het20">
+
+      <img src="download.png" alt="not load">
+
+      <p class="card-body-1">
+        canada
+      </p>
+      <pre class="card1-body">Studying In The canada require <br>5.6 bands and need pte humour or<br>non-characteristic words <br></pre>
+      <a href="contactglobe.html" class="hrt" style="margin-top: 100px;">Read More
+      </a>
+      <hr class="new5">
+    </div>
+
+
+  </div>
+
+
+  <div class="card-2" style="width: 18rem;">
+    <img src="country-2.jpg" class="card-img-top" alt=".sss..">
+    <div class="het21">
+
+      <img src="australia1.svg" alt="not load">
+
+      <p class="card-body-2">
+       Australia
+      </p>
+      <pre class="card2-body">Studying In The Australia require <br>6.5 bands and need pte humour or<br>non-characteristic words <br></pre>
+      <a href="contactglobe.html" class="hrt1" style="margin-top: 100px;">Read More
+      </a>
+      <hr class="new6">
+    </div>
+
+
+  </div>
+
+  <div class="card-3" style="width: 18rem;">
+    <img src="country-3.jpg" class="card-img-top" alt=".sss..">
+    <div class="het22">
+
+      <img src="united-kingdom1.svg" alt="not load">
+
+      <p class="card-body-3">
+       united-kingdom
+      </p>
+      <pre class="card3-body">Studying In The united kingdom  <br>require 5.5 bands and need pte <br>or non-characteristic words <br></pre>
+      <a href="contactglobe.html" class="hrt2" style="margin-top: 100px;">Read More
+      </a>
+      <hr class="new7">
+    </div>
+
+
+  </div>
+  
+  <div class="card-4" style="width: 18rem;">
+    <img src="country-7.jpg" class="card-img-top" alt=".sss..">
+    <div class="het23">
+
+      <img src="singapore.svg" alt="not load">
+
+      <p class="card-body-4">
+       Singapore
+      </p>
+      <pre class="card4-body">Studying In The singapore <br>require 5.5 bands and need pte <br>or non-characteristic words <br></pre>
+      <a href="contactglobe.html" class="hrt3" style="margin-top: 100px;">Read More
+      </a>
+      <hr class="new8">
+    </div>
+
+
+  </div>
+  
+  <div class="card-5" style="width: 18rem;">
+    <img src="country-9.jpg" class="card-img-top" alt=".sss..">
+    <div class="het24">
+
+      <img src="germany.svg" alt="not load">
+
+      <p class="card-body-5">
+       germany
+      </p>
+      <pre class="card5-body">Studying In The germany   <br>require 4.6 bands and need pte <br>or non-characteristic words <br></pre>
+      <a href="contactglobe.html" class="hrt4" style="margin-top: 100px;">Read More
+      </a>
+      <hr class="new9">
+    </div>
+
+
+  </div>
+  
+  <br><br><br>  <br><br>   
+
+<div class="container-fluied111">
+
+  <div class="h">
+
+    <p class="e"> Free Online Assenment</p>
+    <p class="t"> you can book free online assenment</p>
+    <a href="contactglobe.html" class="hp1">GET FREE ASSENMNET</a>
+  </div>
+</div>
+
+
+<div class="con-1">
+  <h1 class="hp5">About our immigration consulting</h1>
+  <br>  
+  <p class="hp6">We've been counselling students for Educational <br>Opportunities in Foreign countries and have been helping<br> them realise their dream of studying abroad.</p>
+
+<br>
+<p class="hp7">
+  Aenean vestibulum ornare sapien, at pharetra massa consectetur et.<br> Aliquam sit amet ipsum a lectus laoreet tempor in id arcu. Fusce<br> venenatis lectus non est congue, vitae malesuada neque lacinia.<br> Maecenas dolor leo, dignissim accumsan tortor in, bibendum suscipit<br> tellus.
+</p>
+<br>  <br>
+
+<a href="contactglobe.html" class="hp8">About Us </a>
+
+<a href="contactglobe.html" class="hp9">Contact us </a>
+<br>
+<img src="about-us.png" class="hp10">
+</div>
+<br>
+<br><br>
+
+<div class="con-2">
+  <h1 style="font-size: x-large; font-weight: 400; margin-left: 500px; ">Read our successful students testimonials</h1>
+  
+</div>
+<div class="containerhet">
+  <div class="testimonial testimonial-left">
+    <img src="Untitled-3.jpg" alt="Person 1" class="img1" height="100px" width="2200px">
+    <p>"Working with this company has been an absolute pleasure. Their professionalism and attention to detail are unmatched. I highly recommend their services to anyone looking for top-notch quality."</p>
+    <p class="testimonial-author">- MR. AVI SHARMA</p>
+  </div>
+  <br><br>
+  <div class="testimonial testimonial-right">
+    <img src="download.jpg" alt="Person 1" class="img2">
+    <p>"I couldn't be happier with the results! The team went above and beyond to ensure everything was perfect. I'll definitely be a returning customer and will be referring all my friends and family."</p>
+    <p class="testimonial-author1">-MR TARANG SUKLA</p>
+  </div>
+</div>
+
+
+<footer id="footer">
+			
+  <div class="row">
+    <div class="col-md-3">
+      <a href="index.html"><img src="global.png" alt="" class="img-fluid logo-footer" style="margin-top: 80px;"></a>
+
+
+    </div>
+    <div class="col-md-3">
+      <div class="useful-link">
+        <h2>Useful Links</h2>
+        <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+        <div class="use-links">
+          <li><a href="web.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+          <li><a href="studentvisa.html"><i class="fa-solid fa-angles-right"></i> studentvisa</a></li>
+          <li><a href="workpermit.html"><i class="fa-solid fa-angles-right"></i>workpermit visa</a></li>
+          <li><a href="vistr visa.html"><i class="fa-solid fa-angles-right"></i> visitor visa</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angles-right"></i> Contact us</a></li>
+        </div>
+      </div>
+
+    </div>
+              <div class="col-md-3">
+                  <div class="social-links">
+        <h2>Follow Us</h2>
+        <img src="./assets/images/about/home_line.png" alt="">
+        <div class="social-icons" ">
+          <img src="download__3_-removebg-preview.png" height="50px" width="40px" style="margin-top:-0px; margin-bottom: -67px;margin-left: -1px;">
+          <li><a href=" https://www.facebook.com/GlobalOverseasEducation
+            "><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+            <img src="download__12_-removebg-preview.png" height="50px" width="30px" style="margin-top:-0px; margin-bottom: -67px;margin-left: 3px;">
+          <li><a href="https://www.instagram.com/globaloverseaseducation/"></a>
+            <img src="download__4_-removebg-preview (1).png" height="50px" width="30px" style="margin-top:40px; margin-bottom: -67px;margin-left: 3px;">
+            <i class="fa-brands fa-instagram" style="margin-left: 10px;"></i> Instagram</a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin-in"style="margin-left: 5px;"></i> Linkedin</a></li>
+        </div>
+      </div>
+              
+
+              </div>
+    <div class="col-md-3">
+      <div class="address">
+        <h2>Address</h2>
+       
+        <div class="address-links">
+          <img src="download__11_-removebg-preview.png" height="50px" style="margin-left: -50px;">
+          <li class="address1" style="margin-top: -48px;"><i class="fa-solid fa-location-dot"></i>  Zodiac Plaza, 304/A ST.XAVIER'S COLLEGE CORNER, Navrangpura, Ahmedabad, Gujarat 380009
+          </li>
+
+          <li><a href="tel: 070411 16469"><i class="fa-solid fa-phone" style="margin-top: 50px; margin-bottom:0px;"></i>+91  070411 16469</a></li>
+          <img src="download__5_-removebg-preview.png" height="35px" style="margin-left: -40px; margin-top: -50px;">   
+          <li><a href="mailto:info@globaloverseasindia.com"><i class="fa-solid fa-envelope"></i> info@globaloverseasindia.com</a></li>
+          <img src="download__6_-removebg-preview.png" height="35px" style="margin-left: -40px; margin-top: -50px;">   
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+</div>
+
+</footer>
+
+<section id="copy-right">
+<div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>  
+ all rights reservrd Powerd By <a href="#">Global</a> 
+
+
+</div>
+
+</section>
+
+</body>
+<script src="https://cdn.pulse.is/livechat/loader.js" data-live-chat-id="65decb7b7f56c150d0006bd1" async></script>
+<div class="visme_d" data-title="Untitled Project" data-url="g7qrjzrw-untitled-project?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="17423"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script></html>

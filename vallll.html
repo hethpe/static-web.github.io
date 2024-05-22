@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changing Boxes</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+</div>
+
+<script>
+  const boxes = document.querySelectorAll('.box');
+
+  // Generate random colors for boxes
+  const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00'];
+  boxes.forEach((box, index) => {
+    if (index < colors.length) {
+      box.style.backgroundColor = colors[index];
+    }
+  });
+
+  // Add event listener to each box
+  boxes.forEach((box, index) => {
+    box.addEventListener('mouseenter', () => {
+      if (index < colors.length) {
+        boxes[4].style.backgroundColor = colors[index];
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Contact Form - DevBabu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+        :root {
+            --prime-color: #4a4db7;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            line-height: 1.5em;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #222222;
+        }
+
+        body,
+        textarea,
+        input,
+        button {
+            font-family: "Open Sans", sans-serif;
+            font-size: 1rem;
+        }
+
+        svg {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            padding: 10px;
+            background-image: linear-gradient(
+                to right,
+                transparent,
+                #ffffff,
+                transparent
+            );
+        }
+
+        .contact-form .fg {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        textarea,
+        input[type="email"],
+        input[type="text"],
+        button[type="submit"] {
+            outline: none;
+            padding: 10px;
+            border: 1px solid rgb(0 0 0/0.2);
+            border-radius: 3px;
+        }
+        textarea:is(:hover, :focus),
+        input[type="email"]:is(:hover, :focus),
+        input[type="text"]:is(:hover, :focus) {
+            border-color: var(--prime-color);
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        button[type="submit"] {
+            cursor: pointer;
+            background: var(--prime-color);
+            font-weight: bold;
+            color: white;
+            margin-top: 5px;
+            transition: 0.3s;
+        }
+        .het5:hover{
+            background-color: rgb(185, 152, 185);
+        }
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.het5').click(function(){
+                alert("your form has been submited")
+            })
+        })
+    </script>
+    
+</head>
+<body>
+<div class="container">
+    <h1>enquiry from</h1>
+    <form action="" method="POST" class="contact-form">
+        <div class="fg">
+            <label for="name">Full name</label>
+            <input type="text" name="full_name" id="name" placeholder="Your name"required>
+        </div>
+        <div class="fg">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+        </div>
+        <div class="fg">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+          <div class="fg">
+            <label for="subject">country</label>
+            <input type="text" name="country" id="subject" placeholder="country"required>
+        </div>
+          <div class="fg">
+            <label for="subject">contact number</label>
+            <input type="text" name="contact number" id="subject" placeholder="contact number"required>
+        </div>
+        <div class="fg">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+        </div>
+        <div class="fg">
+            <button type="submit" value="submit" class="het5">submit</button>
+        </div>
+    </form>
+</div>
+<script>
+      console.log("Name: " + name);
+    console.log("Email: " + email);
+    console.log("Message: " + message);
+</script>
+</body>
+</html>

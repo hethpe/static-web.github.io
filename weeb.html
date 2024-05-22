@@ -1,0 +1,86 @@
+You can create a phone number field with a select box for selecting the country, along with a button for requesting a callback using HTML and CSS. Here's an example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Callback Form</title>
+<style>
+  /* Styles for the form container */
+  .callback-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styles for form elements */
+  .callback-form label,
+  .callback-form input,
+  .callback-form select {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .callback-form input[type="text"],
+  .callback-form select {
+    width: calc(50% - 5px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .callback-form select {
+    width: calc(50% + 5px);
+  }
+
+  .callback-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Clearfix for the floats */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+</head>
+<body>
+  <div class="callback-form">
+    <label for="phone">Phone Number:</label>
+    <div class="clearfix">
+      <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+      <select name="country" id="country">
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <!-- Add more countries as needed -->
+      </select>
+    </div>
+    <button type="submit">Request Callback</button>
+  </div>
+</body>
+</html>
+```
+
+In this code:
+
+- The form container `.callback-form` is styled to give it a border, padding, and a shadow for a box-like appearance.
+- Each form element (`label`, `input`, `select`, `button`) is styled accordingly for layout and appearance.
+- The `float` property is used to place the phone number input and country select side by side.
+- The `clearfix` class is added to the container of the phone number input and country select to clear the floats.
+
+This will create a form with a phone number field, a select box for choosing the country, and a button for requesting a callback. Adjust the styles and add any additional functionality as needed.

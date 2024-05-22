@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+     $(document).ready(function() {
+      
+  $("#box1, #box2").hover(
+   
+    function() {
+      $("#box5").addClass("hovered");
+    },
+    function() {
+      $("#box5").removeClass("hovered");
+    }
+  );
+  
+});
+$(document).ready(function() {
+      
+      $("#box3, #box4").hover(
+       
+        function() {
+          $("#box5").addClass("hp");
+        },
+        function() {
+          $("#box5").removeClass("hp");
+        }
+      );
+      
+    });
+
+   
+</script>
+<style>
+       .container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#box1 {
+  background-color: red;
+}
+
+#box2 {
+  background-color: blue;
+}
+
+#box3 {
+  background-color: green;
+}
+
+
+.hovered{
+    background: linear-gradient(#fc2727, #1622c1);
+}
+#box4{
+    background-color:cyan;
+
+}
+#box5{
+ border: 1px solid black;
+}
+.hp{
+    background: linear-gradient(#097c33, #1dd4f5);
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+
+<div class="het">
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+
+        <div class="box" id="box5"></div>
+
+      </div>
+</body>
+</html>

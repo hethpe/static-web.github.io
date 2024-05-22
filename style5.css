@@ -1,0 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color:brown;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.8rem;
+    gap:28px;
+}
+.container{
+    height: 100vh;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 2.4rem;
+    
+
+    
+}
+.counter{
+   color: blue;
+}
+.main-container-cards{
+    width:450px;
+    height: 450px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.counter-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+.fa-twitter{
+    width: 100px;
+    height: 100px;
+    background-image: url('./img/twitter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 1px;
+}
+.fa-youtube{
+    width: 100px;
+    height: 100px;
+    background-image: url('./img/youtube.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.fa-facebook{
+    width: 100px;
+    height: 85px;
+    background-image: url('./img/facebook.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 8px;
+    
+}
+.counter{
+    font-size: 3.5rem;
+    margin-top: 10px;
+}
+footer{
+    color:aqua;
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width:580px){
+    .main-container-cards{
+        flex-direction: column;
+    }
+}
+.h78{
+    color: red;
+}
+.h79{
+    color: rgb(190, 224, 36);
+}
+.h80{
+    color: gray;
+}

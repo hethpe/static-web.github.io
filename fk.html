@@ -1,0 +1,77 @@
+To create a simple HTML page with four random images that zoom in when hovered, you can use HTML, CSS, and JavaScript. Here's a basic example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoom on Hover</title>
+<style>
+  .container-891 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .image-container-9 {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .image-container-9:hover .image {
+    transform: scale(1.2);
+  }
+  .image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    transition: transform 0.3s;
+  }
+</style>
+</head>
+<body>
+
+<div class="container-891">
+  <div class="image-container-9">
+    <img class="image" src="uk-cover-600x266.jpg.webp" alt="Image 1">
+  </div>
+  <div class="image-container-9">
+    <img class="image" src="country-2.jpg" alt="Image 2">
+  </div>
+  <div class="image-container-9">
+    <img class="image" src="country-2.jpg" alt="Image 3">
+  </div>
+  <div class="image-container-9">
+    <img class="image" src="country-9.jpg" alt="Image 4">
+  </div>
+</div>
+
+<script>
+  // Function to get a random number between min and max
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Function to change image source to a random placeholder image URL
+  function changeImageSource(element) {
+    var randomWidth = getRandomInt(150, 400);
+    var randomHeight = getRandomInt(150, 400);
+    element.src = `https://via.placeholder.com/${randomWidth}x${randomHeight}`;
+  }
+
+  // Change images on load
+  document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll('.image');
+    images.forEach(function(image) {
+      changeImageSource(image);
+    });
+  });
+</script>
+
+</body>
+</html>
+```
+
+This code creates a simple webpage with four image containers. When you hover over any image, it zooms in. The images are initially sourced from placeholders, and on page load, JavaScript replaces them with random-sized placeholder images. Adjust the image sizes and styles in the CSS to fit your needs.
